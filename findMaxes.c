@@ -11,9 +11,10 @@ long long findMaxes(int *list, int n) {
 	 * If not, check if x is bigger than 2nd max.
 	 * If not, check if x is bigger than 3rd max.
 	 * It's guaranteed that all maxes in max[]
-	 * are always sorted in ascending order,
-	 * max[0] > max[1] and max[1] > max[2].
+	 * are always sorted in descending order,
+	 * max[0] >= max[1] and max[1] >= max[2].
 	 * Then do samething with mins.
+	 * It's guaranteed that min[0] <= min[1].
 	 */
 	for (int i = 0; i < n; i++) {
 		if (list[i] > max[0]) {
