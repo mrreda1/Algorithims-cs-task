@@ -1,8 +1,8 @@
 #ifndef FMHEADER_H
 #define FMHEADER_H
 
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 long long bruteforce(int list[], int n);
 long long findMaxes(int list[], int n);

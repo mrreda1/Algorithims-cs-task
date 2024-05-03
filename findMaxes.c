@@ -45,7 +45,7 @@ long long findMaxes(int *list, int n) {
 
 	/* We know that A * B = AB and -A * -B = AB, the result can be
 	 * max[0] * ((max[1] * max[2]) OR * (min[0] * min[1])).
-     * So we need to determine which product should we pick.
+	 * So we need to determine which product should we pick.
 	 */
 	long long product[2] = {max[1] * max[2], min[0] * min[1]};
 
