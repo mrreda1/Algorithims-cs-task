@@ -1,5 +1,3 @@
-#include "header.h"
-
 void merge(int *a, int s, int e) {
 	int m = (s + e) / 2, n = e - s + 1;
 	int p[] = {s, m + 1}, mrg[n], i;

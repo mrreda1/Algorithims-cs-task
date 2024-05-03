@@ -1,6 +1,7 @@
-CC=gcc
+CC="gcc"
+flags="-g3"
 
-build: *.c
-	$(CC) *.c -o run
-debug: *.c
-	$(CC) *.c -g -o debug
+build: ./*/*.c main.c
+	$(CC) ./*/*.c main.c -o run
+debug: ./*/*.c main.c
+	$(CC) ./*/*.c main.c $(flags) -o debug
