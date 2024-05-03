@@ -1,0 +1,13 @@
+algorithm bruteforce(A, n) // A is an array of size n
+{
+max := Low(integer);
+// Try every 3 numbers together to find max product.
+for i := 0 to n - 3 step 1 do
+	for j := i + 1 to n - 2 step 1 do
+		for k := j + 1 to n - 1 step 1 do
+			product := list[i] * list[j] * list[k];
+			if product > max then
+				max := product;
+// Return the maximum product
+return max;
+}
