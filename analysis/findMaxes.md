@@ -11,6 +11,7 @@
     - Arithmetic comparison takes constant time T(1).
     - Conditional statement (`if-else`) takes constant time T(1).
 <br>
+
 -  Total:
     -  T(n) + c = T(n)
 
