@@ -1,0 +1,66 @@
+algorithm sortMethod(*list, n) // *list pointer to list, n size
+{
+	cpy[n]; //creat new list
+
+
+	for i from 0 to i < n do 
+		cpy[i] = list[i]; // copy list to cpy
+
+	
+	mergeSort(cpy, n); // call margesort function 
+						// it will reaarange list in ascending (small -> big) order  
+	
+
+	 product[2] = {cpy[n - 2] * cpy[n - 3], cpy[0] * cpy[1]};
+
+
+	 if product[0] > product[1] then
+		return cpy[n - 1] * product[0];
+	else 
+		return cpy[n - 1] * product[1];
+	
+}
+
+which 
+//  margesort function 
+ algorithm merge( *a, s, e) // takes a as a pointer to an array , s as the start of the array , e is the end {
+
+	 m = (s + e) / 2 // get mid point
+	 n = e - s + 1 // get number of elements 
+
+	p[] = {s, m + 1} // create array in which  s is start index , m+1 mid point index
+	mrg[n]; // create array to store merged elements 
+	i;
+
+
+for i from 0 to n - 1 do
+        if a[p[0]] < a[p[1]] then  
+            mrg[i] = a[p[0]++]  // assign  a[p[0]] to meg [i] and ++ a[p[0]]
+            if p[0] > m then 
+                while p[1] <= e do
+                    mrg[++i] = a[p[1]++]
+
+		else:
+        	 mrg[i] = a[p[1]++]
+            if p[1] > e:		//checks if it reached the end
+                while p[0] <= m fo
+                    mrg[++i] = a[p[0]++]
+	
+
+for i from 0 to n - 1 do
+     a[s++] = mrg[i] // assigns each element of the merge array to he original array 
+
+}
+
+algorithm mergeSortRec(*a, s, e) // takes a as a pointer to an array , s as the start of the array , e is the end {
+    if e <= s:
+        return // Subarray is already sorted
+    m = (s + e) / 2 // Calculate the mid point index
+    mergeSortRec(a, s, m) // Recursively sort the left half of the array
+    mergeSortRec(a, m + 1, e) // Recursively sort the right half of the array
+    merge(a, s, e) // Merge the two halves
+	}
+
+algorithm mergeSort(*a, n) // takes a as a pointer to an array ,n as the size of this aray {
+    mergeSortRec(a, 0, n - 1) // Start the merge sort process from index 0 to n - 1
+	}
