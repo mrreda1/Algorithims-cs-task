@@ -7,6 +7,6 @@
 long long bruteforce(int list[], int n);
 long long findMaxes(int list[], int n);
 long long sortMethod(int list[], int n);
-void mergeSort(int *a, int n);
+void mergeSort(int list[], int n);
 
 #endif // !FMHEADER_H
