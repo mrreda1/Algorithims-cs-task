@@ -1,33 +1,33 @@
 algorithm findMaxes(list: array of integers, n: integer) -> integer
     max[3], min[2]: integers
-    max[0] := INT_MIN
     max[1] := INT_MIN
     max[2] := INT_MIN
-    min[0] := INT_MAX
+    max[3] := INT_MIN
     min[1] := INT_MAX
+    min[2] := INT_MAX
 
-    for i := 0 to n-1 do
-        if list[i] > max[0] then
-            max[2] := max[1]
-            max[1] := max[0]
-            max[0] := list[i]
-        else if list[i] > max[1] then
+    for i := 1 to n do
+        if list[i] > max[1] then
+            max[3] := max[2]
             max[2] := max[1]
             max[1] := list[i]
         else if list[i] > max[2] then
+            max[3] := max[1]
             max[2] := list[i]
+        else if list[i] > max[3] then
+            max[3] := list[i]
 
-        if list[i] < min[0] then
-            min[1] := min[0]
-            min[0] := list[i]
-        else if list[i] < min[1] then
+        if list[i] < min[1] then
+            min[2] := min[1]
             min[1] := list[i]
+        else if list[i] < min[2] then
+            min[2] := list[i]
 
     product[2]: integers
-    product[0] := max[1] * max[2]
-    product[1] := min[0] * min[1]
+    product[1] := max[2] * max[3]
+    product[2] := min[1] * min[2]
 
-    if product[0] > product[1] then
-        return max[0] * product[0]
+    if product[1] > product[2] then
+        return max[1] * product[1]
     else
-        return max[0] * product[1]
+        return max[1] * product[2]
