@@ -41,6 +41,7 @@ Define a function 'merge' that takes an pointer integer array 'a', start index '
     Copy elements from 'mrg' back to array 'a' starting from index 's'.
 
 Define a function 'mergeSortRec' that takes a pointer integer array 'a', start index 's', and end index 'e':
+
     If 'e' is less than or equal to 's', return (base case).
     Calculate the middle index 'm' as (s + e) / 2.
     Recursively call 'mergeSortRec' for the first half of the array (s to m).
@@ -48,4 +49,5 @@ Define a function 'mergeSortRec' that takes a pointer integer array 'a', start i
     Merge the sorted halves using the 'merge' function.
 
 Define a function 'mergeSort' that takes a pointer integer array 'a' and its length 'n':
+
     Call 'mergeSortRec' with 'a', start index 0, and end index n - 1.
