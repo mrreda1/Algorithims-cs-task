@@ -1,6 +1,6 @@
 ## Bruteforce Algorithm Using Natural Language
 
-- Define a function ‘bruteforce’ that takes a list of integers and its length to calculate the maximum product for three numbers
+- Define a function `bruteforce` that takes a list of integers and its length to calculate the maximum product for three numbers
 Initialize a variable named ‘max’ to the smallest possible integer value.
 
 - For each index `i` in the range from 0 to `n` - 3:
