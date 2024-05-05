@@ -1,4 +1,4 @@
-#### This algorithm performs a merge sort on an array of integers entered by the user and then calculates the maximum product of three integers which can be obtained from the sorted array. The algorithm can be divided into two parts:
+**This algorithm performs a merge sort on an array of integers entered by the user and then calculates the maximum product of three integers which can be obtained from the sorted array. The algorithm can be divided into two parts:**
 
 <!--toc:start-->
 - [Merge Sort](#merge-sort)
