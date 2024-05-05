@@ -9,20 +9,20 @@
 <!--toc:end-->
 
 # Main algorithm
-1. ### Initializing Variables:
+- ### Initializing Variables:
     - Assigning values to arrays `max` and `min`.
     - Time complexity: $O(1)$.
     <br>
 
-2. ### For Loop:
+- ### For Loop:
     - Iterates through the array from `i = 0 to n-1` ~> $T(n)$.
     $$\sum_{i=0}^{n-1}1 = upper-lower+1 = (n-1) - 0 + 1 = n$$
     <br>
 
-3. ### Finding Max Element:
+- ### Finding Max Element:
     - Within the loop, comparisons are made to find the maximum and minimum elements.
     - Time complexity: $T(1)$ for each comparison.
-4. ### Comparison of Products and Return Maximum Product:
+- ### Comparison of Products and Return Maximum Product:
     - Arithmetic comparison takes constant time $T(1)$.
     - Conditional statement (`if-else`) takes constant time $T(1)$.
 

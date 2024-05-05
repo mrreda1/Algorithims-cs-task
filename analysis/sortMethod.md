@@ -14,11 +14,11 @@
 
 # Merge Sort
 
-1. ### `mergeSort(int list[], int n)`
+- ### `mergeSort(int list[], int n)`
    - Since it directly calls [`mergeSortRec`](#mergesortrecint-list-int-start-int-end), they have the same time complexity.
 <br>
 
-2. ### `mergeSortRec(int list[], int start, int end)`
+- ### `mergeSortRec(int list[], int start, int end)`
    - It divides the array into halves recursively until the base case is reached.
    - Each recursion divides the array into halves, resulting in a time complexity of
    $$T(n/2)$$
@@ -27,7 +27,7 @@
    $$T(n) = 2T(n/2) + O(n)$$
 <br>
 
-3. ### `merge(int list[], int start, int end)`
+- ### `merge(int list[], int start, int end)`
    - This function performs operations linearly based on the size of the input range [`start`, `end`].<br>
    - The merging process involves iterating through the range once, which takes $O(n)$ time.<br>
    - So, the time complexity of [`merge`](#mergeint-list-int-start-int-end) function is $O(n)$.
@@ -40,20 +40,20 @@ $$T(n) = O(n*log n)$$
 
 # Main algorithm
 
-1. ### Copying the List
+- ### Copying the List
    - Copying the list takes $O(n)$ time, as each element needs to be copied from the input list to the new array.
    - Time complexity: $O(n)$.
 
-2. ### Sorting the Copied List
+- ### Sorting the Copied List
    - Sorting the copied list using merge sort takes $O(n*log n)$ time.
    - Time complexity: $O(n*log n)$.
 
-3. ### Calculating the Product
+- ### Calculating the Product
    - Calculating the maximum product of three integers involves computing two potential products,
      which takes $O(1)$ time since it involves only basic arithmetic operations.
    - Time complexity: $O(1)$.
 
-4. ### Returning the Result
+- ### Returning the Result
    - Comparing the two potential products and returning the maximum product multiplied by the largest element
      in the sorted array takes $O(1)$ time.
    - Time complexity: $O(1)$.
