@@ -1,4 +1,4 @@
-#include "header.h"
+#include "../include/header.h"
 
 long long sortMethod(int *list, int n) {
 	int cpy[n];

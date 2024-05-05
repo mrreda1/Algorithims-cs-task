@@ -1,4 +1,4 @@
-#include "header.h"
+#include "../include/header.h"
 
 long long bruteforce(int *list, int n) {
 	int max = INT_MIN;

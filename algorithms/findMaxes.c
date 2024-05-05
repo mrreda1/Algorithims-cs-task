@@ -1,4 +1,4 @@
-#include "header.h"
+#include "../include/header.h"
 
 long long findMaxes(int *list, int n) {
 	// init array for the max 3 elements in the list.
