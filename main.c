@@ -3,13 +3,16 @@
 int main(int argc, char *argv[]) {
 	size_t n;
 	long long max_product = 0;
+    printf("How many elements? ");
 	scanf("%lu", &n);
 
 	// Init an array of length n.
 	int arr[n];
 
 	// Take array's elements.
+    printf("Please insert your %lu elements.\n", n);
 	for (int i = 0; i < n; i++) {
+        printf("/> ");
 		scanf("%d", arr + i);
 	}
 
@@ -32,5 +35,5 @@ int main(int argc, char *argv[]) {
 	}
 
 	// Print the result.
-	printf("%lld", max_product);
+	printf("Max product of three elements is: %lld", max_product);
 }
