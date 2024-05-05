@@ -14,7 +14,8 @@
 # Merge Sort
 
 1. ### `mergeSort(int list[], int n)`
-   - Since it directly calls [`mergeSortRec`](#mergesortrecint-list-int-start-int-end), they have the same time complexity.<br>
+   - Since it directly calls [`mergeSortRec`](#mergesortrecint-list-int-start-int-end), they have the same time complexity.
+<br>
 
 2. ### `mergeSortRec(int list[], int start, int end)`
    - It divides the array into halves recursively until the base case is reached.
@@ -28,7 +29,8 @@
 3. ### `merge(int list[], int start, int end)`
    - This function performs operations linearly based on the size of the input range [`start`, `end`].<br>
    - The merging process involves iterating through the range once, which takes $O(n)$ time.<br>
-   - So, the time complexity of [`merge`](#mergeint-list-int-start-int-end) function is $O(n)$.<br>
+   - So, the time complexity of [`merge`](#mergeint-list-int-start-int-end) function is $O(n)$.
+<br>
 
 **Therefore, the overall time complexity of the [`mergeSort`](#merge-sort) algorithm, is determined by the [`mergeSortRec`](#mergesortrecint-list-int-start-int-end) function because it performs the actual sorting operation.<br>
 The time complexity of [`mergeSort`](#merge-sort) is $O(n*log n)$ for all cases (worst-case, average-case, and best-case).**
