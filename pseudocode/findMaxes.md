@@ -1,4 +1,4 @@
-### FindMaxes Algorithm Using Natural Language<hr>
+## FindMaxes Algorithm Using Natural Language
 
 - **Initialization**: Start by initializing arrays to hold the maximum three numbers (max) and the minimum two numbers (min). Set the initial values of max to the smallest possible integer value and min to the largest possible integer value.
 
