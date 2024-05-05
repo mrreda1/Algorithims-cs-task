@@ -20,7 +20,7 @@
 
 - ### Finding Max Element:
     - Within the loop, comparisons are made to find the maximum and minimum elements.
-    - Time complexity: $T(1)$ for each comparison.
+    - Time complexity: $O(1)$ for each comparison.
 
 - ### Comparison of Products and Return Maximum Product:
     - Arithmetic comparison takes constant time $T(1)$.
