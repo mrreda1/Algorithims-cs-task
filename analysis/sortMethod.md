@@ -21,15 +21,15 @@ The algorithm can be divided into two parts:**
 Firstly, let's divide and analyze the merge sort algorithm and see how does it work...
 The merge sort algorithm is composed of 3 interacted functions which are :-
 
-1. #### `mergeSort(int list[], int n)`
+1. ### `mergeSort(int list[], int n)`
     This is the main function for merge sort. It takes an array a of integers and its size n.
     It calls [mergeSortRec](#mergesortrecint-a-int-s-int-e) with the start index 0 and end index n - 1.
 
-2. #### `mergeSortRec(int *a, int s, int e)`
+2. ### `mergeSortRec(int *a, int s, int e)`
     This function recursively divides the array into halves until the base case is reached (when e <= s).
     Then it merges the sorted halves using the [merge](#mergeint-list-int-start-int-end) function.
 
-3. #### `merge(int list[], int start, int end)`
+3. ### `merge(int list[], int start, int end)`
     This function merges two sorted halves of the array a.
     It takes the start index s and end index e of the array.
     It calculates the middle index m and the total number of elements n in the range [s, e].
@@ -54,29 +54,29 @@ The merge sort algorithm is composed of 3 interacted functions which are :-
     The merge sort algorithm has a time complexity of O(n log n) for all cases (worst-case, average-case, and best-case), making it efficient for sorting large datasets.
 
 
-## The main algorithm
+## Main algorithm
 
 After sorting, We are going to see how does the algorithm calculate
 the maximum product of three integers which can be obtained from the sorted array.
 That can be done through four main steps...
 
-1. #### Copying the List
+1. ### Copying the List
     The algorithm starts by creating a copy of the input list.
     This operation takes O(n) time, where n is the size of the input list.
     This is because each element needs to be copied from the input list to the new array.
 
-2. #### Sorting the Copied List
+2. ### Sorting the Copied List
     The algorithm then sorts the copied list using the mergeSort function.
     The time complexity of merge sort is O(n log n), where n is the size of the list. So, sorting the copied list takes O(n log n) time.
 
-3. #### Calculating the Product
+3. ### Calculating the Product
     After sorting, the algorithm calculates the maximum product of three integers.
     It computes two potential products:
     cpy[n - 2] * cpy[n - 3]
     cpy[0] * cpy[1]
     This operation takes O(1) time since it involves only basic arithmetic operations.
 
-4. #### Returning the Result
+4. ### Returning the Result
     Finally, the algorithm compares the two potential products and returns the maximum product multiplied by the largest element in the sorted array. This operation takes O(1) time.
 ## Overall Time Complexity
 The dominant factor in terms of time complexity is the sorting operation, which takes O(n log n) time.
