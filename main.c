@@ -10,9 +10,8 @@ int main(int argc, char *argv[]) {
 	int arr[n];
 
 	// Take array's elements.
-    printf("Please insert your %lu elements.\n", n);
+    printf("Please insert your %lu elements.\n/> ", n);
 	for (int i = 0; i < n; i++) {
-        printf("/> ");
 		scanf("%d", arr + i);
 	}
 
