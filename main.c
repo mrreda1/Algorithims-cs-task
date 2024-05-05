@@ -34,5 +34,5 @@ int main(int argc, char *argv[]) {
 	}
 
 	// Print the result.
-	printf("Max product of three elements is: %lld", max_product);
+	printf("Max product of three elements is: %lld\n", max_product);
 }
