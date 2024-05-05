@@ -14,6 +14,7 @@
     - Iterates through the array from $i=0$ to $n-1$ ~> $T(n)$.
     $$\sum_{i=0}^{n-1}1 = upper-lower+1 = (n-1) - 0 + 1 = n$$
     <br>
+
     - Time complexity: $O(n)$.
     <br>
 
