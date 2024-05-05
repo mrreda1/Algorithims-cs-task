@@ -59,5 +59,5 @@ $$T(n) = O(n*log n)$$
 
 
 # Overall Time Complexity:
-**The dominant factor in terms of time complexity is the sorting operation, which takes** $O(n*log n)$ **time.
-So, the final time complexity of the algorithm is:** $O(n*log n)$.
+**The dominant factor in terms of time complexity is the sorting operation, which takes $O(n * log n)$ time.
+So, the final time complexity of the algorithm is: $O(n * log n)$.**
