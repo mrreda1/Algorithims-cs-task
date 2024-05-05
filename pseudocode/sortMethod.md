@@ -13,6 +13,6 @@
 - Since multiplying two negative numbers yields a positive product, we consider both positive and negative scenarios.
 Select the maximum of these two potential products and multiply it by by the last element in 'cpy', which gives the maximum product of three elements.
 
-#### MergeSort Function
+### MergeSort Function
 > A popular recursive sorting algorithm.<br>
 For more information: [Merge sort](https://en.wikipedia.org/wiki/Merge_sort).
