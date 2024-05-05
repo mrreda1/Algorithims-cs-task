@@ -1,10 +1,6 @@
 # Table of contents
 <!--toc:start-->
 - [Main algorithm](#main-algorithm)
-    - [Initializing Variables](#initializing-variables)
-    - [For Loop](#for-loop)
-    - [Finding Max Element](#finding-max-element)
-    - [Comparison of Products and Return Maximum Product](#comparison-of-products-and-return-maximum-product)
 - [Overall Time Complexity](#overall-time-complexity)
 <!--toc:end-->
 
@@ -27,5 +23,5 @@
     - Conditional statement (`if-else`) takes constant time $T(1)$.
 
 # Overall Time Complexity
-**The dominant factor in terms of time complexity is the [For Loop](#for-loop), which takes $O(n)$ time.
+**The dominant factor in terms of time complexity is the [For Loop](#main-algorithm), which takes $O(n)$ time.
 So, the final time complexity of the algorithm is: $O(n)$.**

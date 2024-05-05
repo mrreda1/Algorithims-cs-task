@@ -1,28 +1,23 @@
 # Table of contents
 <!--toc:start-->
 - [Merge Sort](#merge-sort)
-  - [`mergeSort(int list[], int n)`](#mergesortint-list-int-n)
-  - [`mergeSortRec(int list[], int start, int end)`](#mergesortrecint-list-int-start-int-end)
-  - [`merge(int list[], int start, int end)`](#mergeint-list-int-start-int-end)
 - [Main algorithm](#calculating-the-product)
-  - [Copying the List](#copying-the-list)
-  - [Sorting the Copied List](#sorting-the-copied-list)
-  - [Calculating the Product](#calculating-the-product)
-  - [Returning the Result](#returning-the-result)
 - [Overall Time Complexity:](#overall-time-complexity)
 <!--toc:end-->
 
 # Merge Sort
 
 - ### `mergeSort(int list[], int n)`
-   - Since it directly calls [`mergeSortRec`](#mergesortrecint-list-int-start-int-end), they have the same time complexity.
+   - Since it directly calls [`mergeSortRec`](#merge-sort), they have the same time complexity.
 <br>
 
 - ### `mergeSortRec(int list[], int start, int end)`
    - It divides the array into halves recursively until the base case is reached.
    - Each recursion divides the array into halves, resulting in a time complexity of
    $$T(n/2)$$
-   - It also calls the [`merge`](#mergeint-list-int-start-int-end) function, which has a time complexity of $O(n)$.
+   <br>
+
+   - It also calls the [`merge`](#merge-sort) function, which has a time complexity of $O(n)$.
    - So, the time complexity can be represented recursively as:
    $$T(n) = 2T(n/2) + O(n)$$
 <br>
@@ -30,10 +25,10 @@
 - ### `merge(int list[], int start, int end)`
    - This function performs operations linearly based on the size of the input range [`start`, `end`].<br>
    - The merging process involves iterating through the range once, which takes $O(n)$ time.<br>
-   - So, the time complexity of [`merge`](#mergeint-list-int-start-int-end) function is $O(n)$.
+   - So, the time complexity of [`merge`](#merge-sort) function is $O(n)$.
 <br>
 
-**Therefore, the overall time complexity of the [`mergeSort`](#merge-sort) algorithm, is determined by the [`mergeSortRec`](#mergesortrecint-list-int-start-int-end) function because it performs the actual sorting operation.<br>
+**Therefore, the overall time complexity of the [`mergeSort`](#merge-sort) algorithm, is determined by the [`mergeSortRec`](#merge-sort) function because it performs the actual sorting operation.<br>
 The time complexity of [`mergeSort`](#merge-sort) is $O(n*log n)$ for all cases (worst-case, average-case, and best-case).**
 $$T(n) = O(n*log n)$$
 <br>
