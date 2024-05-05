@@ -11,10 +11,10 @@
 - [Overall Time Complexity:](#overall-time-complexity)
 <!--toc:end-->
 
-## Merge Sort
+# Merge Sort
 
 1. ### `mergeSort(int list[], int n)`
-   - Since it directly calls [`mergeSortRec`](#mergesortrecint-list-int-start-int-end), they have the same time complexity.
+   - Since it directly calls [`mergeSortRec`](#mergesortrecint-list-int-start-int-end), they have the same time complexity.<br>
 
 2. ### `mergeSortRec(int list[], int start, int end)`
    - It divides the array into halves recursively until the base case is reached.
@@ -23,17 +23,19 @@
    - It also calls the [`merge`](#mergeint-list-int-start-int-end) function, which has a time complexity of $O(n)$.
    - So, the time complexity can be represented recursively as:
    $$T(n) = 2T(n/2) + O(n)$$
+<br>
 
 3. ### `merge(int list[], int start, int end)`
    - This function performs operations linearly based on the size of the input range [`start`, `end`].<br>
    - The merging process involves iterating through the range once, which takes $O(n)$ time.<br>
-   - So, the time complexity of [`merge`](#mergeint-list-int-start-int-end) function is $O(n)$.
+   - So, the time complexity of [`merge`](#mergeint-list-int-start-int-end) function is $O(n)$.<br>
 
 **Therefore, the overall time complexity of the [`mergeSort`](#merge-sort) algorithm, is determined by the [`mergeSortRec`](#mergesortrecint-list-int-start-int-end) function because it performs the actual sorting operation.<br>
 The time complexity of [`mergeSort`](#merge-sort) is $O(n*log n)$ for all cases (worst-case, average-case, and best-case).**
 $$T(n) = O(n*log n)$$
+<br>
 
-## Main algorithm
+# Main algorithm
 
 1. ### Copying the List
    - Copying the list takes $O(n)$ time, as each element needs to be copied from the input list to the new array.
@@ -54,6 +56,6 @@ $$T(n) = O(n*log n)$$
    - Time complexity: $O(1)$.
 
 
-## Overall Time Complexity:
-**The dominant factor in terms of time complexity is the sorting operation, which takes $O(n*log n)$ time.
-So, the final time complexity of the algorithm is: $O(n*log n)$.**
+# Overall Time Complexity:
+**The dominant factor in terms of time complexity is the sorting operation, which takes** $O(n*log n)$ **time.
+So, the final time complexity of the algorithm is:** $O(n*log n)$.
