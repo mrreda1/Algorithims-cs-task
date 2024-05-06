@@ -10,6 +10,7 @@ Each algorithm is implemented in C language and accompanied by pseudocode repres
 - [Pseudocode](#pseudocode)
 - [Natural Language](#natural-language)
 - [Analysis](#analysis)
+- [Algorithm Comparison](#algorithm-comparison)
 - [Compilation](#compilation)
 - [How to Run](#how-to-run)
 
@@ -536,6 +537,14 @@ So, the final time complexity of the algorithm is: $O(n * log n)$.**
 **The dominant factor in terms of time complexity is the [For Loop](#main-algorithm), which takes $O(n)$ time.
 So, the final time complexity of the algorithm is: $O(n)$.**
 
+# Algorithm Comparison
+
+| Algorithm    | Time Complexity          | Space Complexity | Description                                                  |
+|--------------|--------------------------|------------------|--------------------------------------------------------------|
+| Bruteforce  | O(n^3)                   | O(1)             | Finds maximum product by trying every combination of 3 numbers |
+| findMaxes    | O(n)                     | O(1)             | Finds maximum product by finding the maximum and minimum values |
+| Sort Method  | O(n log n)               | O(n)             | Finds maximum product by sorting the array and considering the largest and smallest elements |
+
 # Compilation
 
 To compile the program, execute the following command in the terminal:
@@ -544,7 +553,7 @@ To compile the program, execute the following command in the terminal:
 gcc ./*/*.c main.c -o run
 ```
 
-This command compiles all C files within the folders containing the algorithms along with the main.c file into an executable named `run`.
+This command compiles all C files within the folders containing the algorithms along with the `main.c` file into an executable named `run`.
 
 # How to Run
 After compilation, you can run the program with different algorithms as arguments. Here are the available options:
