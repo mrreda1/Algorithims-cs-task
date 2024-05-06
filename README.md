@@ -391,12 +391,6 @@ That can be done through four main steps...**
 
 # Analysis
 ## bruteforce
-### Table of contents
-<!--toc:start-->
-- [Main algorithm](#main-algorithm)
-- [Overall Time Complexity](#overall-time-complexity)
-<!--toc:end-->
-
 ### Main algorithm
 - #### Initializing Variables:
     - In this step, variables like `max` are initialized.
@@ -441,13 +435,6 @@ That can be done through four main steps...**
 - So, the final time complexity of the algorithm is: $O(n^3)$.
 
 ## sortMethod
-### Table of contents
-<!--toc:start-->
-- [Merge Sort](#merge-sort)
-- [Main algorithm](#calculating-the-product)
-- [Overall Time Complexity:](#overall-time-complexity)
-<!--toc:end-->
-
 ### Merge Sort
 
 - #### `mergeSort(int list[], int n)`
@@ -503,12 +490,6 @@ So, the final time complexity of the algorithm is: $O(n * log n)$.**
 
 
 ## findMaxes
-### Table of contents
-<!--toc:start-->
-- [Main algorithm](#main-algorithm)
-- [Overall Time Complexity](#overall-time-complexity)
-<!--toc:end-->
-
 ### Main algorithm
 - #### Initializing Variables:
     - Assigning values to arrays `max` and `min`.
