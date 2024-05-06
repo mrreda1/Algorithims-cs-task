@@ -4,15 +4,14 @@ This repository contains three different algorithms to find the maximum product 
 Each algorithm is implemented in C language and accompanied by pseudocode representations, natural language explanations, and analysis.
 
 # Table of Contents
-
+- [Algorithims-cs-task](#algorithims-cs-task)
+- [Table of Contents](#table-of-contents)
 - [Algorithms](#algorithms)
 - [Pseudocode](#pseudocode)
 - [Natural Language](#natural-language)
 - [Analysis](#analysis)
 - [Compilation](#compilation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [How to Run](#how-to-run)
 
 # Algorithms
 ## bruteforce
@@ -549,16 +548,16 @@ This command compiles all C files within the folders containing the algorithms a
 
 # How to Run
 After compilation, you can run the program with different algorithms as arguments. Here are the available options:
-- To run with the bruteforce algorithm:
-    ```bash
-    ./run bruteforce
-    ```
-- To run with the findMaxes algorithm:
-    ```bash
-    ./run findMaxes
-    ```
-- To run with the sortMethod algorithm:
-    ```bash
-    ./run sortMethod
-    ```
-- If no argument is provided, the program will use the most efficient algorithm.
+To run with the bruteforce algorithm:
+```bash
+./run bruteforce
+```
+To run with the findMaxes algorithm:
+```bash
+./run findMaxes
+```
+To run with the sortMethod algorithm:
+```bash
+./run sortMethod
+```
+If no argument is provided, the program will use the most efficient algorithm.
