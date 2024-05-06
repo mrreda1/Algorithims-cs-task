@@ -522,9 +522,9 @@ So, the final time complexity of the algorithm is: $O(n)$.**
 
 | Algorithm    | Time Complexity          | Space Complexity | Description                                                  |
 |--------------|--------------------------|------------------|--------------------------------------------------------------|
-| bruteforce  | O(n^3)                   | O(1)             | Finds maximum product by trying every combination of 3 numbers |
-| findMaxes    | O(n)                     | O(1)             | Finds maximum product by finding the maximum and minimum values |
-| sortMethod  | O(n log n)               | O(n)             | Finds maximum product by sorting the array and considering the largest and smallest elements |
+| bruteforce  | $O(n^3)$                   | $O(1)$             | Finds maximum product by trying every combination of 3 numbers |
+| findMaxes    | $O(n)$                     | $O(1)$             | Finds maximum product by finding the maximum and minimum values |
+| sortMethod  | $O(n * log n)$               | $O(n)$             | Finds maximum product by sorting the array and considering the largest and smallest elements |
 
 # Compilation
 
