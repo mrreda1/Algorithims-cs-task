@@ -5,6 +5,10 @@ int main(int argc, char *argv[]) {
 	long long max_product = 0;
     printf("How many elements? ");
 	scanf("%lu", &n);
+    if (n < 3) {
+        printf("Size must be at least 3");
+        return 0;
+    }
 
 	// Init an array of length n.
 	int arr[n];
