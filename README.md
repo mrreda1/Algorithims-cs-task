@@ -455,7 +455,7 @@ That can be done through four main steps...**
     $$a = 2, b = 2, f(n) = n$$
     $$log_b(a) = log_2(2) = 1$$
     $$n^{log_b(a)} = n^1 = n$$
-    $$ f(n) = n^{log_b(a)}$$
+    $$f(n) = n^{log_b(a)}$$
    - Time complexity: $O(n * logn)$
 <br>
 
